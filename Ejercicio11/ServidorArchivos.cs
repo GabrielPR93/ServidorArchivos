@@ -145,6 +145,7 @@ namespace Ejercicio11
                             Socket sCliente = s.Accept();
                             Thread hilo = new Thread(hiloCliente);
                             hilo.Start(sCliente);
+                            hilo.IsBackground = true; //Asi al finalizar el hilo principal finaliza todo
                         }
                         catch (SocketException)
                         {
