@@ -275,13 +275,12 @@ namespace Ejercicio11
                             }
                         }
 
-
                     }
                 }
                 catch (IOException e)
                 {
                     Console.WriteLine(e.Message);
-
+                    flag = false;
                 }
             }
 
